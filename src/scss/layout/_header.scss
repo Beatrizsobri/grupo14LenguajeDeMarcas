@@ -1,5 +1,11 @@
 .page__header {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefae5;  
+
+  &__image {
+    height: 215px;
+    padding: 10px;
+  }
 }
