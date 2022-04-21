@@ -1,0 +1,23 @@
+.page__menu {
+    padding: 10px 150px;
+    background-color: #FAFAFA;
+    
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        &__items {
+            padding: 10px;
+            text-transform: uppercase;
+
+            &:hover{
+                border-radius: 5px;
+                box-shadow: 0 0 11px #579963; 
+                cursor: pointer;
+            }
+        }
+    }
+}
+
