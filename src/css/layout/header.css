@@ -1,0 +1,12 @@
+/* Header */
+.page__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefae5;    
+  }
+  
+  .page__header__image {
+    height: 215px;
+    padding: 10px;
+  }
