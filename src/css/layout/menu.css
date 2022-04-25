@@ -1,0 +1,22 @@
+/* Menu */
+.page__menu {
+    padding: 10px 150px;
+    background-color: #FAFAFA;
+  }
+  
+  .page__menu__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .page__menu__content__items {
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  
+  .page__menu__content__items:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 11px #579963; 
+    cursor: pointer;
+  }  

@@ -6,14 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trabajo de duendes</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
+  <link rel="stylesheet" href="../css/core/reset.css" />
+  <link rel="stylesheet" href="../css/pages/index.css" />
+  <link rel="stylesheet" href="../css/layout/header.css" />
+  <link rel="stylesheet" href="../css/layout/menu.css" />
+  <link rel="stylesheet" href="../css/layout/footer.css" />
+  <link rel="icon" href="../images/favicon.png" />
 </head>
 
 <body>
   <div class="page" id="contenedor">
-    <include src="./partials/header.html"></include>
-    <include src="./partials/menu.html"></include>
+    <!--  Header  -->
+    <header class="page__header" id="top">
+      <a href="../index.html" title="Inicio">
+        <img class="page__header__image" src="../images/trabajoDeDuendesLogo.png">
+      </a>
+    </header>
+    <!-- End Header -->
+    <!-- Menu -->
+    <nav class="page__menu">
+      <ul class="page__menu__content">
+        <li class="page__menu__content__items">
+          <a href="./pages/quienesSomos.html" title="Quienes Somos">Quienes Somos</a>
+        </li>
+        <li class="page__menu__content__items">
+          <a href="./pages/misProyectos.html" title="Mis proyectos">Mis proyectos</a>
+        </li>
+        <li class="page__menu__content__items">
+          <a href="./pages/contacto.html" title="Contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Menu -->
     <main class="main">
       <section>
         <header>
@@ -43,7 +67,26 @@
         ipsam? Voluptas saepe, tempora laboriosam commodi nemo labore consequatur ad suscipit est autem velit beatae?
       </aside>
     </main>
-    <include src="./partials/footer.html"></include>
+    <!-- Footer -->
+    <footer id="footer" class="page__footer">
+      <nav>
+        Siguenos:
+        <ul class="page__footer__social">
+          <li>
+            <a href="https://www.facebook.com/trabajodeduendes2/" target="blank" title="Facebook">
+              <img class="icon" src="../images/facebookLogo.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/trabajodeduendes/?hl=en" target="blank" title="Instagram">
+              <img class="icon" src="../images/instagramLogo.png">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img class="page__footer__image" src="../images/trabajoDeDuendesLogo.png">
+    </footer>
+    <!-- End Footer -->
   </div>
 </body>
 

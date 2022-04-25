@@ -1,0 +1,22 @@
+/* footer */
+
+.page__footer {
+    padding: 10px;
+    display: flex;
+    background-color: #fefae5;  
+    justify-content: space-between;
+}
+
+.page__footer__social {
+    display: flex;
+    padding-top: 5px;
+}
+
+.page__footer__image {
+    height: 100px;
+    align-self: center;
+}
+
+.icon {
+  height: 28px;
+}
