@@ -1,11 +1,11 @@
-h1 {
+  .Enunciado1 {
     text-align: center;
     color:#B8860B;
     font-family:Comic Sans;
     
   }
   
-  h2 {
+  .Enunciado2 {
     text-align: center;
     color:#B8860B;
     font-family:Comic Sans;
@@ -41,7 +41,23 @@ h1 {
   }
   
   .carrusel-menu {
-    display: none;
+    display: none;/* Header */
+    .page__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fefae5;    
+      }
+      
+      .page__header__image {
+        height: 215px;
+        padding: 10px;
+      }
+      
+     body {
+        background-color: #fefae5;
+        
+    }
   }
   
   @media screen and (min-width: 500px) {
@@ -67,9 +83,6 @@ h1 {
     }
   }
   
-  p {
-    text-align: center;
-  }
   
   /* footer */
   
@@ -107,8 +120,9 @@ h1 {
       padding: 10px;
     }
     
-   body {
+   .cuerpo {
       background-color: #fefae5;
-  }
+      
+   }
   
   
