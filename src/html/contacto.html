@@ -39,7 +39,102 @@
             </ul>
         </nav>
         <!-- End Menu -->
-        <p>contacto</p>
+        <main>
+            <h1> Formulario de contacto </h1>
+            <form action="procesa.jsp" method="post">
+                <fieldset>
+                    <legend> Datos del Cliente </legend>
+                    <table>
+                        <tr>
+                            <td>DNI:</td>
+                            <td colspan="5"><input name="txtnif" type="text" size="9" maxlength="9" autofocus
+                                    required /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nombre">Nombre: </label></td>
+                            <td colspan="5"><input name="txtnombre" type="text" size="50" maxlength="50" /></td>
+                        </tr>
+                        <tr>
+                            <td>direcci&oacute;n</td>
+                            <td colspan="5"><input name="txtdireccion" type="text" size="80" maxlength="100" /></td>
+                        </tr>
+                        <tr>
+                            <td>fecha nac.</td>
+                            <td><input name="txtfecha" type="text" placeholder="dd/mm/aaaa" size="15" maxlength="10" />
+                            </td>
+                            <td>tel&eacute;fono</td>
+                            <td colspan="2">
+                                <input name="txttelefono" type="tel" size="9" maxlength="9"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>localidad:</td>
+                            <td><input name="txtlocalidad" type="text" size="20" maxlength="20" /></td>
+                            <td>provincia:</td>
+                            <td><input name="txtprovincia" type="text" size="25" maxlength="25" /></td>
+                            <td>cp:</td>
+                            <td><input name="txtcp" type="text" size="8" maxlength="5" /></td>
+                        </tr>
+                        <tr>
+                            <td>email:</td>
+                            <td colspan="5"><input name="txtemail" type="email" size="50" maxlength="50" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend> Información del producto </legend>
+                    <table>
+                        <tr>
+                            <td>Artículo</td>
+                            <td><select name="Lista Productos">
+                                    <option value="0">Duende Z</option>
+                                    <option value="1"> Duende B </option>
+                                    <option value="2"> Mushu </option>
+                                </select></td>
+                            <td>cantidad</td>
+                            <td><input type="number" min=1 max=10 step=1></td>
+                        </tr>
+                        <tr>
+                            <td> Observaciones </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><textarea name="Observaciones" rows="7" cols="40"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Forma de pago</legend>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>contrarembolso</td>
+                            <td><input name="rbtnforma" type="radio" value="0" checked="checked" /></td>
+                            <td>con tarjeta</td>
+                            <td><input name="rbtnforma" type="radio" value="1" /></td>
+                            <td>Criptomoneda</td>
+                            <td><input name="rbtnforma" type="radio" value=2></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>n&uacute;mero tarjeta</td>
+                            <td colspan="4"><input name="txtnumero" type="text" size="20" maxlength="30" /></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input type="checkbox" value="recibirmail"> Deseo recibir Emails mensuales <br>
+                <input type="checkbox" value="suscribirse"> Deseo una suscribirme
+                <table width='100%'>
+                    <tr>
+                        <td>
+                            <input class="botones" type="submit" value="enviar" />
+                            <input class="botones" type="reset" value="limpiar" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
         <!-- Footer -->
         <footer id="footer" class="page__footer">
             <nav>
