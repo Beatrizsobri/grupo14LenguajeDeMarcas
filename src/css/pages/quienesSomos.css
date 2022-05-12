@@ -1,13 +1,7 @@
-body {
+.cuerpo {
     background-color: antiquewhite;
 }
 
-h2 {
-    text-align: center;
-    color: black;
-    font-family: Comic Sans;
-    margin: 2%;
-}
 
 .main {
     font-family: Comic Sans;
@@ -21,7 +15,7 @@ h2 {
 
 .intro {
     font-family: Comic Sans;
-    font-size: large;
+    font-size: xx-large;
     font-weight: bolder;
     text-align: center;
     color: black;
@@ -38,6 +32,11 @@ h2 {
     color: black;
     text-shadow: grey 1px 1px 2px;
     margin: 2%;
+    margin-left: 20%;
+    float: left;
+    width: 900px;
+    height: 100px;
+    padding-top: 10px;
 }
 
 .explicacion {
@@ -46,27 +45,47 @@ h2 {
     font-weight: bolder;
     text-align: center;
     color: black;
+    width: 600px;
+    height: 200px;
     text-shadow: grey 1px 1px 2px;
     margin: 2%;
+    float: left;
 }
 
-img {
-    size: 400px 400px;
+.quienfoto {
     border-radius: 10px;
-    padding: 3px;
     background-color: gray;
-    width: auto;
-    margin: auto;
-    display: block;
+    width: 500px;
+    height: 300px;
+    float: left;
     transition: transform 0.3s ease-in-out;
+}
+
+#star {
+    border-radius: 10px;
+}
+
+#duendeZ {
+    border-radius: 10px;
+}
+
+#duendeB {
+    border-radius: 10px;
+}
+
+#mushu {
+    border-radius: 10px;
 }
 
 figure img:hover {
     transform: scale(1.1);
 }
 
-footer {
-    float: inline-end;
+.page__footer {
+    float: left;
+    width: auto;
+    margin: auto;
+
 }
 
 @media (max-width: 320px) and (orientation:portrait) {
