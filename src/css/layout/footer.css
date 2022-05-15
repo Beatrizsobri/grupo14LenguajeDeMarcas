@@ -5,6 +5,7 @@
     display: flex;
     background-color: #fefae5;  
     justify-content: space-between;
+    font-size: 20px;
 }
 
 .page__footer__social {
@@ -19,4 +20,13 @@
 
 .icon {
   height: 28px;
+}
+
+@media screen and (max-width: 900px) {
+    .page__footer {
+        font-size: 16px;
+    } 
+    .page__footer__image {
+        height: 50px;
+    }
 }

@@ -9,4 +9,12 @@
   .page__header__image {
     height: 215px;
     padding: 10px;
+    cursor: pointer;
   }
+
+@media screen and (max-width: 900px){
+
+  .page__header {
+    display: none;
+  }
+}
