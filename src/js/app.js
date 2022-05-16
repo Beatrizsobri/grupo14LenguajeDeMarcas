@@ -1,3 +1,5 @@
+// MENU JS PARA MOVIL Y TABLET
+
 const mainMenu = document.querySelector('.page__menu__list');
 const closeMenu = document.querySelector('.page__menu__closeMenu');
 const openMenu = document.querySelector('.page__menu__openMenu');
@@ -21,3 +23,21 @@ function show() {
 function close() {
     mainMenu.style.top = '-100%';
 }
+
+// FORMULARIO JS PARA QUE FUNCIONE EL BOTÓN DE ENVIAR
+
+const form = document.querySelector('.js-form');
+const formSubmitButton = document.querySelector('.js-submit');
+const formResetButton = document.querySelector('.js-reset');
+const userEmail = document.getElementById('email'); //ver esto
+
+function sendEmail(e) {
+    e.preventDefault()
+}
+
+function resetForm() {
+    form.reset()
+}
+
+formSubmitButton.addEventListener('click', sendEmail);
+formResetButton.addEventListener('click', resetForm);
