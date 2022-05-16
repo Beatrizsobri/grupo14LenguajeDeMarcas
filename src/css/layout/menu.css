@@ -69,6 +69,7 @@
 
     .page__menu__logo {
       margin: 6px;
+      padding-left: 15px;
       cursor: pointer;  
       display: block;
     }
