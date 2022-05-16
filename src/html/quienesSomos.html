@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="../css/layout/menu.css" />
     <link rel="stylesheet" href="../css/layout/footer.css" />
     <link rel="stylesheet" href="../css/pages/quienesSomos.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="icon" href="../images/favicon.png" />
 </head>
 
-<body>
+<body class="cuerpo">
     <div class="page">
         <!--  Header  -->
         <header class="page__header" id="top">
@@ -25,65 +27,71 @@
         <!-- End Header -->
         <!-- Menu -->
         <nav class="page__menu">
-            <ul class="page__menu__content">
-                <li class="page__menu__content__items">
-                    <a href="./quienesSomos.html" title="Quienes Somos">Quienes Somos</a>
-                </li>
-                <li class="page__menu__content__items">
-                    <a href="./misProyectos.html" title="Mis proyectos">Mis proyectos</a>
-                </li>
-                <li class="page__menu__content__items">
-                    <a href="./contacto.html" title="Contacto">Contacto</a>
-                </li>
+            <div class="page__menu__logo">
+                <h1>Trabajo de duendes</h1>
+            </div>
+            <div class="page__menu__openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="page__menu__list">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="./misProyectos.html">Mis Proyectos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <div class="page__menu__closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
         <!-- End Menu -->
         <main class="main">
             <section>
-                <h2>Si estás leyendo esto puede ser por dos motivos: porque te has perdido (ahora vas a tener que leerte
-                    este rollo emotivo) o porque te interesa realmente
-                    quienes somos (en serio, ¿por qué?).</h2>
+                <h1 class="intro">Si estás leyendo esto puede ser por dos motivos:<br>
+                    porque te has perdido (ahora vas a tener que leerte
+                    este rollo emotivo) <br>
+                    o porque te interesa realmente
+                    quienes somos (en serio, ¿por qué?).</h1>
 
-                <article>
-                    <figure>
-                        <img id="star" src="../images/star.jpg" width="300" height="300">
+                <article class="bloque">
+                    <figure class="quienfoto">
+                        <img id="star" src="../images/star.jpg" alt="Imaginate unas letras flotando por el espacio">
                     </figure>
-                    <div id="manos">
-                        <p>Hace mucho tiempo, en una galaxia muy lejana... no, espera, eso es de otra historia... A ver,
-                            como era,...
+                    <div class="explicacion">
+                        <p>Hace mucho tiempo, en una galaxia muy lejana... no, espera, eso es de
+                            otra historia... <br>
+                            A ver, como era,...<br>
                             bueno, la historia es larga y un poco aburrida. En resumen...</p>
                     </div>
                 </article>
 
-                <article id="duendeZ>">
-                    <div id="duendeZ">
+                <article class="bloque">
+                    <div class="persona">
                         <h2>Duende Zeta: </h2>
                     </div>
-                    <figure>
-                        <img src="../images/duendeZ.jpg" width="300" height="300">
+                    <figure class="quienfoto">
+                        <img id="duendeZ" src="../images/duendeZ.jpg"
+                            alt="Duende Zeta estará trabajando... volverá enseguida">
                     </figure>
-                    <p>es una crack, experta con la aguja de ganchillo
+                    <p class="explicacion">es una crack, experta con la aguja de ganchillo
                         y perfeccionista hasta la extenuación</p>
                 </article>
 
-                <article>
-                    <div id="duendeB">
+                <article class="bloque">
+                    <div class="persona">
                         <h2>Duende Bee: </h2>
                     </div>
-                    <figure>
-                        <img src="../images/duendeB.jpg" width="300" height="300">
+                    <figure class="quienfoto">
+                        <img id="duendeB" src="../images/duendeB.jpg"
+                            alt="Duende Bee está apagado o fuera de cobertura. Inténtalo más tarde">
                     </figure>
-                    <p>da apoyo moral, hace sus pinitos tallando vidrio y es mano de obra barata.</p>
+                    <p class="explicacion">da apoyo moral, hace sus pinitos tallando vidrio y es mano de obra barata.
+                    </p>
                 </article>
 
-                <article>
-                    <div id="mushu">
+                <article class="bloque">
+                    <div class="persona">
                         <h2>Duende Mushu: </h2>
                     </div>
-                    <figure>
-                        <img src="../images/mushu.jpg" width="300" height="300">
+                    <figure class="quienfoto">
+                        <img id="mushu" src="../images/mushu.jpg" alt="Mushu está durmiendo la siesta, ooooootra vez">
                     </figure>
-                    <p>se pasa el día durmiendo, una vez cazó una mosca.</p>
+                    <p class="explicacion">se pasa el día durmiendo, una vez cazó una mosca.</p>
                 </article>
             </section>
         </main>
@@ -94,19 +102,20 @@
                 <ul class="page__footer__social">
                     <li>
                         <a href="https://www.facebook.com/trabajodeduendes2/" target="blank" title="Facebook">
-                            <img class="icon" src="../images/facebookLogo.png">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/trabajodeduendes/?hl=en" target="blank" title="Instagram">
-                            <img class="icon" src="../images/instagramLogo.png">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <img class="page__footer__image" src="../images/trabajoDeDuendesLogo.png">
+            <img class="page__footer__image" src="../images/trabajoDeDuendesLogo.png" alt="Logo de Trabajo de duendes">
         </footer>
         <!-- End Footer -->
+        <script src="../js/app.js"></script>
     </div>
 </body>
 

@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../css/layout/header.css" />
   <link rel="stylesheet" href="../css/layout/menu.css" />
   <link rel="stylesheet" href="../css/layout/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="icon" href="../images/favicon.png" />
 </head>
 
@@ -19,52 +21,67 @@
     <!--  Header  -->
     <header class="page__header" id="top">
       <a href="./index.html" title="Inicio">
-        <img class="page__header__image" src="../images/trabajoDeDuendesLogo.png">
+        <img class="page__header__image" src="../images/trabajoDeDuendesLogo.png" alt="Logo de Trabajo de duendes">
       </a>
     </header>
     <!-- End Header -->
     <!-- Menu -->
     <nav class="page__menu">
-      <ul class="page__menu__content">
-        <li class="page__menu__content__items">
-          <a href="./quienesSomos.html" title="Quienes Somos">Quienes Somos</a>
-        </li>
-        <li class="page__menu__content__items">
-          <a href="./misProyectos.html" title="Mis proyectos">Mis proyectos</a>
-        </li>
-        <li class="page__menu__content__items">
-          <a href="./contacto.html" title="Contacto">Contacto</a>
-        </li>
+      <div class="page__menu__logo">
+        <h1>Trabajo de duendes</h1>
+      </div>
+      <div class="page__menu__openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="page__menu__list">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./quienesSomos.html">Quienes Somos</a></li>
+        <li><a href="./misProyectos.html">Mis Proyectos</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <div class="page__menu__closeMenu"><i class="fa fa-times"></i></div>
       </ul>
     </nav>
     <!-- End Menu -->
     <main class="main">
       <section>
         <header>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet harum sunt enim quisquam provident
-          temporibus, ipsum sequi ratione iusto aspernatur autem excepturi dolorum! Alias fugit dignissimos iure
-          perspiciatis voluptas?
+          <h2 class="main__header__title">Tu tienda de manualidades</h2>
         </header>
-        <article>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem cumque atque ipsam neque ipsum
-          veritatis ipsa, officiis illum possimus ut nesciunt exercitationem facere dolore! Dolorem dignissimos dicta
-          doloribus eligendi.
+        <article class="main__article">
+          <p>Trabajo de Duendes es una tienda de manualidades. Pidenos el diseño que más te guste a través del
+            formulario de contacto y te responderemos con el tiempo y el precio.
+            Hacemos muchos tipos de manualidades, como muñecos de fieltro, muñecos de tus peliculas favoritas, bisuteria
+            de swarosky, Amigurumis, punto de cruz y figuritas de Fimo.</p>
+          <img alt="Duende de punto hecho por Trabajo de Duendes" src="../images/duendeB.jpg" />
         </article>
         <footer>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi in consequatur aspernatur a
-          consequuntur ipsum quo nam asperiores sequi. Voluptatum facilis dolore corrupti adipisci laboriosam veritatis
-          sed, dicta eaque?
+          <p class="main__footer">Si te interesa cualquier otro producto que no esté en la web (por ejemplo, un
+            amigurumi que has visto en instagram), no dudes en preguntarnos al email emailInventado@gmail.com, pondremos
+            las manos a funcionar para encontrar el patrón. </p>
         </footer>
       </section>
-      <aside>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio odio consequuntur inventore libero deleniti
-        nulla sapiente perspiciatis debitis dolorem impedit corporis, explicabo, esse beatae sed, laborum officiis nemo
-        veritatis harum.
-        Facilis, fuga ea odio perferendis dolor quia animi omnis quisquam voluptatibus consectetur facere, harum quasi
-        repudiandae aut molestiae impedit accusantium! Amet, exercitationem? Recusandae mollitia amet odio cumque
-        dignissimos accusantium modi!
-        Veritatis in, ad laborum rem quae dignissimos recusandae autem! Accusamus atque dolore sed assumenda possimus
-        ipsam? Voluptas saepe, tempora laboriosam commodi nemo labore consequatur ad suscipit est autem velit beatae?
+      <aside class="reviews">
+        <h3 class="reviews__tile">Opiniones de nuestros Clientes</h3>
+        <ul class="reviews__list">
+          <li>
+            <span class="review__comment">"Me compré un Amigurumi, llegó en muy poco tiempo y una atención al detalle.
+              Sin duda volveré a
+              comprar"</span> -
+            Patricia
+          </li>
+          <li>
+            <span class="review__comment">"Llegué aqui a través de Instagram y sin grander expectativas. Les contacté
+              directamente a través del
+              formulario de contacto porque quería algo muy especifico que había visto en internet, pero no sabía quien
+              podía hacerlo. Me contestaron super rápido y super agradables, y me propusieron varios diseños. Después
+              cumplieron tanto en tiempos como en calidades. Desde entonces, soy un cliente FIEL."</span> - Pablo
+          </li>
+          <li>
+            <span class="review__comment">"Hace poco nació mi sobrino, y quería hacerle un regalo personalizado con su
+              nombre. Un perrito de
+              punto con su nombre. Al ser algo tan importante para mi empecé por contactarles en el formulario.Y la
+              verdad
+              es que estoy encantada! Mi Sobrino no se separa de el" - Rosa</span>
+          </li>
+        </ul>
       </aside>
     </main>
     <!-- Footer -->
@@ -74,20 +91,21 @@
         <ul class="page__footer__social">
           <li>
             <a href="https://www.facebook.com/trabajodeduendes2/" target="blank" title="Facebook">
-              <img class="icon" src="../images/facebookLogo.png">
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/trabajodeduendes/?hl=en" target="blank" title="Instagram">
-              <img class="icon" src="../images/instagramLogo.png">
+              <i class="fab fa-instagram"></i>
             </a>
           </li>
         </ul>
       </nav>
-      <img class="page__footer__image" src="../images/trabajoDeDuendesLogo.png">
+      <img class="page__footer__image" src="../images/trabajoDeDuendesLogo.png" alt="Logo de Trabajo de duendes">
     </footer>
     <!-- End Footer -->
   </div>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>
